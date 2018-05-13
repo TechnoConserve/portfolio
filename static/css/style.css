@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 80px;
+    background: #eee;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 1;
+    font-weight: 800;
+    font-size: 2vw;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+@media only screen and (max-width: 1200px) {
+    .logo {
+        font-family: 'Open Sans', sans-serif;
+        color: #555;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: -3px;
+        line-height: 1;
+        font-weight: 800;
+        font-size: 3vw;
+        text-shadow: #EDEDED 3px 2px 0;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 924px) {
+    .logo {
+        font-family: 'Open Sans', sans-serif;
+        color: #555;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: -3px;
+        line-height: 1;
+        font-weight: 800;
+        font-size: 4vw;
+        text-shadow: #EDEDED 3px 2px 0;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    .logo {
+        font-family: 'Open Sans', sans-serif;
+        color: #555;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: -3px;
+        line-height: 1;
+        font-weight: 800;
+        font-size: 5vw;
+        text-shadow: #EDEDED 3px 2px 0;
+        position: relative;
+    }
+}
+#logo-top {
+    text-align: center;
+    margin-right: 3px;  /* To account for the extra space created by the letter-spacing property above */
+}
+#title {
+    color: #2d3c49;
+}
+hr {
+    color: #7d97ad;
+}
+.center {
+    text-align: center;
+}
+.crop {
+    max-height: 400px;
+    overflow: hidden;
+}
+.featured h2 {
+    color: #7d97ad;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.featured h3 {
+    margin-bottom: 0;
+}
+.featured img {
+    max-height: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.featured img:hover {opacity: 0.7;}
+@media only screen and (max-width: 1551px) {
+    .featured .container {
+        justify-content: center;
+    }
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1100px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
