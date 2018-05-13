@@ -82,9 +82,8 @@ hr {
 .center {
     text-align: center;
 }
-.crop {
-    max-height: 400px;
-    overflow: hidden;
+#main-img {
+    width: 100%;
 }
 .featured h2 {
     color: #7d97ad;
@@ -178,4 +177,8 @@ hr {
     .modal-content {
         width: 100%;
     }
+}
+
+figcaption .description {
+    width: 325px;
 }
